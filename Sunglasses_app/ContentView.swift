@@ -8,14 +8,31 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var searchText = ""
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        ZStack {
+            Color.white
+                .edgesIgnoringSafeArea(.all)
+            VStack {
+                HStack {
+                    Image(systemName: "magnifyingglass")
+                        .foregroundColor(.gray)
+                    
+                    TextField("Search", text: $searchText)
+                        
+                }
+                .padding()
+                .background(
+                    Capsule()
+                        .foregroundColor(Color("SearchFieldColor"))
+                )
+                
+                CategoryItemView()
+                
+            }
+            .padding(20)
         }
-        .padding()
     }
 }
 

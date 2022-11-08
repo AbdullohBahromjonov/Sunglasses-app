@@ -7,18 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E509B268291AC1DE001D1214 /* Sunglasses_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E509B267291AC1DE001D1214 /* Sunglasses_appApp.swift */; };
+		E509B268291AC1DE001D1214 /* Sunglasses_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E509B267291AC1DE001D1214 /* Sunglasses_App.swift */; };
 		E509B26A291AC1DE001D1214 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E509B269291AC1DE001D1214 /* ContentView.swift */; };
 		E509B26C291AC1E0001D1214 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E509B26B291AC1E0001D1214 /* Assets.xcassets */; };
 		E509B26F291AC1E0001D1214 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E509B26E291AC1E0001D1214 /* Preview Assets.xcassets */; };
+		E509B276291AC4D8001D1214 /* CategoryItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E509B275291AC4D8001D1214 /* CategoryItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E509B264291AC1DE001D1214 /* Sunglasses_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sunglasses_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E509B267291AC1DE001D1214 /* Sunglasses_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sunglasses_appApp.swift; sourceTree = "<group>"; };
+		E509B267291AC1DE001D1214 /* Sunglasses_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sunglasses_App.swift; sourceTree = "<group>"; };
 		E509B269291AC1DE001D1214 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E509B26B291AC1E0001D1214 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E509B26E291AC1E0001D1214 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E509B275291AC4D8001D1214 /* CategoryItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +53,9 @@
 		E509B266291AC1DE001D1214 /* Sunglasses_app */ = {
 			isa = PBXGroup;
 			children = (
-				E509B267291AC1DE001D1214 /* Sunglasses_appApp.swift */,
+				E509B267291AC1DE001D1214 /* Sunglasses_App.swift */,
 				E509B269291AC1DE001D1214 /* ContentView.swift */,
+				E509B275291AC4D8001D1214 /* CategoryItemView.swift */,
 				E509B26B291AC1E0001D1214 /* Assets.xcassets */,
 				E509B26D291AC1E0001D1214 /* Preview Content */,
 			);
@@ -138,7 +141,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E509B26A291AC1DE001D1214 /* ContentView.swift in Sources */,
-				E509B268291AC1DE001D1214 /* Sunglasses_appApp.swift in Sources */,
+				E509B268291AC1DE001D1214 /* Sunglasses_App.swift in Sources */,
+				E509B276291AC4D8001D1214 /* CategoryItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
