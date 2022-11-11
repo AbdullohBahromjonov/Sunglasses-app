@@ -12,6 +12,12 @@
 		E509B26C291AC1E0001D1214 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E509B26B291AC1E0001D1214 /* Assets.xcassets */; };
 		E509B26F291AC1E0001D1214 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E509B26E291AC1E0001D1214 /* Preview Assets.xcassets */; };
 		E509B276291AC4D8001D1214 /* CategoryItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E509B275291AC4D8001D1214 /* CategoryItemView.swift */; };
+		E509B278291BDD12001D1214 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E509B277291BDD12001D1214 /* CategoryView.swift */; };
+		E509B27A291BDD30001D1214 /* SearchField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E509B279291BDD30001D1214 /* SearchField.swift */; };
+		E509B27C291BE561001D1214 /* ProductGridItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E509B27B291BE561001D1214 /* ProductGridItem.swift */; };
+		E509B27E291BEF8E001D1214 /* ProductsGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E509B27D291BEF8E001D1214 /* ProductsGridView.swift */; };
+		E509B281291C0146001D1214 /* StaggeredList in Frameworks */ = {isa = PBXBuildFile; productRef = E509B280291C0146001D1214 /* StaggeredList */; };
+		E509B283291D5B55001D1214 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E509B282291D5B55001D1214 /* ProductDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +27,11 @@
 		E509B26B291AC1E0001D1214 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E509B26E291AC1E0001D1214 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E509B275291AC4D8001D1214 /* CategoryItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemView.swift; sourceTree = "<group>"; };
+		E509B277291BDD12001D1214 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
+		E509B279291BDD30001D1214 /* SearchField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchField.swift; sourceTree = "<group>"; };
+		E509B27B291BE561001D1214 /* ProductGridItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductGridItem.swift; sourceTree = "<group>"; };
+		E509B27D291BEF8E001D1214 /* ProductsGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsGridView.swift; sourceTree = "<group>"; };
+		E509B282291D5B55001D1214 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E509B281291C0146001D1214 /* StaggeredList in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +67,11 @@
 			children = (
 				E509B267291AC1DE001D1214 /* Sunglasses_App.swift */,
 				E509B269291AC1DE001D1214 /* ContentView.swift */,
+				E509B27D291BEF8E001D1214 /* ProductsGridView.swift */,
+				E509B282291D5B55001D1214 /* ProductDetailView.swift */,
+				E509B27B291BE561001D1214 /* ProductGridItem.swift */,
+				E509B279291BDD30001D1214 /* SearchField.swift */,
+				E509B277291BDD12001D1214 /* CategoryView.swift */,
 				E509B275291AC4D8001D1214 /* CategoryItemView.swift */,
 				E509B26B291AC1E0001D1214 /* Assets.xcassets */,
 				E509B26D291AC1E0001D1214 /* Preview Content */,
@@ -86,6 +103,9 @@
 			dependencies = (
 			);
 			name = Sunglasses_app;
+			packageProductDependencies = (
+				E509B280291C0146001D1214 /* StaggeredList */,
+			);
 			productName = Sunglasses_app;
 			productReference = E509B264291AC1DE001D1214 /* Sunglasses_app.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +134,9 @@
 				Base,
 			);
 			mainGroup = E509B25B291AC1DE001D1214;
+			packageReferences = (
+				E509B27F291C0146001D1214 /* XCRemoteSwiftPackageReference "SwiftUIStaggeredList" */,
+			);
 			productRefGroup = E509B265291AC1DE001D1214 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -140,8 +163,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E509B27C291BE561001D1214 /* ProductGridItem.swift in Sources */,
+				E509B283291D5B55001D1214 /* ProductDetailView.swift in Sources */,
 				E509B26A291AC1DE001D1214 /* ContentView.swift in Sources */,
+				E509B27A291BDD30001D1214 /* SearchField.swift in Sources */,
+				E509B27E291BEF8E001D1214 /* ProductsGridView.swift in Sources */,
 				E509B268291AC1DE001D1214 /* Sunglasses_App.swift in Sources */,
+				E509B278291BDD12001D1214 /* CategoryView.swift in Sources */,
 				E509B276291AC4D8001D1214 /* CategoryItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,6 +371,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E509B27F291C0146001D1214 /* XCRemoteSwiftPackageReference "SwiftUIStaggeredList" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alfianlosari/SwiftUIStaggeredList.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E509B280291C0146001D1214 /* StaggeredList */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E509B27F291C0146001D1214 /* XCRemoteSwiftPackageReference "SwiftUIStaggeredList" */;
+			productName = StaggeredList;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E509B25C291AC1DE001D1214 /* Project object */;
 }

@@ -9,24 +9,36 @@ import SwiftUI
 
 struct CategoryItemView: View {
     @State var textSize: CGFloat = 0
+    let active: Bool
+    let text: String
+    var animation: Namespace.ID
     
     var body: some View {
         VStack(spacing: 6) {
-            Text("Men's".uppercased())
+            Text(text.uppercased())
+                .foregroundColor(active ? .black : .gray)
+                .font(.system(size: 14))
                 .fontWeight(.medium)
                 .readSize { newSize in
                     textSize = newSize.width
                 }
-            Rectangle()
-                .foregroundColor(.black)
-                .frame(width: textSize, height: 4)
+            
+            if active {
+                Rectangle()
+                    .foregroundColor(.black)
+                    .frame(width: textSize, height: 4)
+                    .matchedGeometryEffect(id: "tab", in: animation)
+            }
+            
         }
     }
 }
 
-struct CategoryView_Previews: PreviewProvider {
+struct CategoryItemView_Previews: PreviewProvider {
+    @Namespace static var animation
+    
     static var previews: some View {
-        CategoryItemView()
+        CategoryItemView(active: true, text: "Men's", animation: animation)
     }
 }
 
